@@ -1,0 +1,29 @@
+{
+  "name": "cordova-isaquesilva-sunmiPrinter",
+  "version": "1.0.0",
+  "description": "Plugin para impressao no K1 via Cordova",
+  "cordova": {
+    "id": "cordova-isaquesilva-sunmiPrinter",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://isaque-silva@dev.azure.com/isaque-silva/SunmiPrinterService/_git/pluginIonic"
+  },
+  "keywords": [
+    "android",
+    "sunmi",
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.0.0"
+    }
+  ],
+  "author": "Isaque Silva",
+  "license": "Apache 2.0"
+}
