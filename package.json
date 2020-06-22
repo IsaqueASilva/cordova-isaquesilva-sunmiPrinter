@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://isaque-silva@dev.azure.com/isaque-silva/SunmiPrinterService/_git/pluginIonic"
+    "url": "https://isaque-silva@dev.azure.com/isaque-silva/SunmiPrinterService/_git/cordova-isaquesilva-sunmiPrinter"
   },
   "keywords": [
     "android",
@@ -24,6 +24,6 @@
       "version": ">=3.0.0"
     }
   ],
-  "author": "Isaque Silva",
+  "author": "Isaque Silva - HYSITECH",
   "license": "Apache 2.0"
 }
