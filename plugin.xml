@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova-isaquesilva-sunmiPrinter" version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>K1 - SunmiPlugin</name>
+
+    <description>Plugin para impressao no K1 via Cordova</description>
+    <license>Apache 2.0</license>
+    <keywords>android, sunmi</keywords>
+
+    <engines>
+      <engine name="cordova" version=">=3.0.0" />
+    </engines>
+
+    <js-module name="SunmiPlugin" src="www/SunmiPlugin.js">
+        <clobbers target="SunmiPlugin" />
+    </js-module>
+
+    <platform name="android">
+        <config-file target="config.xml" parent="/*">
+            <feature name="SunmiPlugin">
+                <param name="android-package" value="br.eti.isaquesilva.sunmi.cordovaPlugin" />
+            </feature>
+        </config-file>
+
+        <source-file src="src/android/SunmiPlugin.java" target-dir="src/br/eti/isaquesilva/sunmi/cordovaPlugin" />
+        <source-file src="src/android/SunmiPrinterUtils-debug.aar" target-dir="libs/" />
+        <framework src="src/android/buildSunmi.gradle" custom="true" type="gradleReference" />
+    </platform>
+</plugin>
