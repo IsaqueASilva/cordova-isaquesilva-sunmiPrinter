@@ -1,0 +1,83 @@
+{
+  "initialization": {
+    "initDefault": true,
+    "initialAlignment": "centered"
+  },
+  "printOrder": [
+    {
+      "type": "text",
+      "content": "---------------------------------",
+      "size": 11,
+      "bold": false,
+      "underline": false,
+      "withReturn": true,
+      "align": "centered"
+    },
+    {
+      "type": "barcode",
+      "content": "123456",
+      "barcodeType": "CODE128", /*UPCA, UPCE,EAN13, EAN8, CODE39, ITF, CODABAR, CODE93, CODE128 */
+      "height": 20,
+      "width": 60,
+      "textPosition": 1, /* 0=Não Imprime, 1=Abaixo do Codigo, 2=Acima do Codigo, 3=Acima e Abaixo do Codigo*/
+      "align": "centered"
+    },
+    {
+      "type": "qrCode",
+      "content": "Meu Conteudo do QR Code",
+      "size": 4, /* 1 a 16 */
+      "errorLevel": 3 /* 1 a 3 */
+    },
+    {
+      "type": "table",
+      "rows": [
+          [
+            {
+              "content": "Linha 1 Coluna 1",
+              "columnWidth": 5,
+              "columnAlign": "left"
+            },
+            {
+              "content": "Linha 1 Coluna 2",
+              "columnWidth": 6,
+              "columnAlign": "centered"
+            },
+            {
+              "content": "Linha 1 Coluna 3",
+              "columnWidth": 5,
+              "columnAlign": "right"
+            }
+          ],
+          [
+            {
+              "content": "Linha 2 Coluna 1",
+              "columnWidth": 5,
+              "columnAlign": "left"
+            },
+            {
+              "content": "Linha 2 Coluna 2",
+              "columnWidth": 6,
+              "columnAlign": "centered"
+            },
+            {
+              "content": "Linha 2 Coluna 3",
+              "columnWidth": 5,
+              "columnAlign": "right"
+            }
+          ]
+      ]
+    },
+    {
+      "type": "cutPaper"
+    },
+    {
+      "type": "lineWrap",
+      "lines": 1
+    }
+  ],
+  "finalization": {
+    "autoOutPaper": true,
+    "cutPaper": true
+  }
+
+}
