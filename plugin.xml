@@ -17,7 +17,7 @@
     <platform name="android">
         <config-file target="config.xml" parent="/*">
             <feature name="SunmiPlugin">
-                <param name="android-package" value="br.eti.isaquesilva.sunmi.cordovaPlugin" />
+                <param name="android-package" value="br.eti.isaquesilva.sunmi.cordovaPlugin.SunmiPlugin" />
             </feature>
         </config-file>
 
